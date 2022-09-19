@@ -1,0 +1,356 @@
+/* font Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
+
+/* Global color settings */
+:root {
+  --bg-body: #e6faff;
+  --font-gray: #bebfc1;
+  --fade-black: #777676;
+  --bg-btn: #b4d9e2;
+  --wc-white: #fff;
+  --sg-star: #f1a04f;
+}
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  overflow-y: hidden;
+}
+
+/* main container */
+.container {
+  background-color: var(--wc-white);
+  width: 25%;
+  min-height: 95vh;
+  border-radius: 15px;
+  margin: auto;
+  padding: 15px 30px;
+}
+
+/* Header Section  */
+.header-section {
+  padding: 20px 0;
+}
+
+.header-section > h6 {
+  color: var(--font-gray);
+  margin-top: 1rem;
+}
+
+.get-appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search bar */
+.search-box {
+  width: 100%;
+  border: 1px solid var(--font-gray);
+  height: 3rem;
+  background-color: var(--wc-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0.5rem 0;
+}
+
+.search-box > input {
+  border: none;
+  margin-left: 5px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.search-box > input:focus {
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Doctors departments */
+.specialities-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.specialities-division * {
+  margin: 2px 0;
+}
+.specialities-division {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialities-division span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+}
+
+.specialities-division h6 {
+  color: var(--font-gray);
+}
+
+/* Popular Doctors Section */
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-title h6 {
+  color: var(--fade-black);
+}
+
+.doctor-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.doctor {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.doctor-detail h6 {
+  color: var(--font-gray);
+}
+
+.doctor-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f4f8;
+  border-radius: 10px;
+  padding: 4px;
+  width: 3.1rem;
+  height: 1.1rem;
+}
+
+.doctor-time * {
+  color: #9da0a9;
+  font-size: 9px;
+}
+
+.avatars img {
+  border-radius: 12px;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* footer icons */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+/* Mobile screen view */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .search-box > input {
+    font-size: 0.5rem;
+  }
+  .search-box > input:focus {
+    font-size: 0.5rem;
+  }
+}
+
+/* Doctor Page styling */
+
+/* Header icons */
+.back-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-link a {
+  text-decoration: none;
+  color: black;
+  margin-left: 3px;
+}
+
+/* Doctor information  */
+.doctor-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doctor-bio img {
+  width: 5rem;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.doctor-bio h6 {
+  color: var(--font-gray);
+}
+
+.about-doctor h4 {
+  font-size: smaller;
+  margin-bottom: 5px;
+}
+
+.desc-doctor {
+  text-align: justify;
+  display: inline-block;
+  min-height: 80px;
+}
+.desc-doctor p {
+  font-size: 13px;
+  color: var(--font-gray);
+}
+
+.desc-doctor button {
+  font-size: 14px;
+}
+
+.read-more {
+  display: none;
+}
+
+.btn-more {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-less {
+  display: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Consulting and Experience Section */
+.consulting-section {
+  margin: 1.7rem 0;
+}
+
+.consulting-section span {
+  color: var(--fade-black);
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+.consulting-section i {
+  margin-right: 15px;
+}
+
+.consulting-time {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.experience {
+  display: flex;
+  align-items: center;
+}
+
+/* Reviews Section */
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews h6 {
+  color: var(--fade-black);
+}
+
+.review i {
+  color: var(--sg-star);
+}
+
+/* Review comments section */
+
+.review-comment {
+  display: flex;
+  gap: 10px;
+  margin: 1rem 0 0;
+}
+
+.review-comment-one img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  margin: 0 1rem 0.5rem 0;
+}
+
+.review-comment-one {
+  display: flex;
+  align-items: center;
+}
+
+.commentor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.commentor h6 {
+  color: var(--font-gray);
+}
+.review-comment-two {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.review-comment-two i {
+  color: var(--sg-star);
+  font-size: 0.8rem;
+}
+
+.review-desc {
+  color: var(--font-gray);
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+/* Booking appointment button */
+.btn-booking {
+  color: black;
+  background-color: #b4d9e2;
+  width: 100%;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+}
